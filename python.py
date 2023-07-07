@@ -21,6 +21,7 @@ print("Number of duplicate rows =", df2.duplicated().sum())
 
 # Removing duplicate rows (if any)
 df.drop_duplicates(inplace=True)
+# "inplace" rewrites te data the data in the same dataset and not create a separate dataset (like I did when creating "df2").
 
 # Final Data
 print(df2)
